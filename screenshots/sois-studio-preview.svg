@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="100%" height="100%">
+  <rect width="900" height="550" fill="#0b0f19" rx="10"/>
+  <rect x="25" y="20" width="850" height="50" fill="#131b2e" stroke="#1e2c4a" rx="6"/>
+  <circle cx="50" cy="45" r="6" fill="#f87171"/>
+  <circle cx="70" cy="45" r="6" fill="#fbbf24"/>
+  <circle cx="90" cy="45" r="6" fill="#34d399"/>
+  <text x="120" y="50" fill="#38bdf8" font-family="sans-serif" font-size="16" font-weight="bold">SOISForge Pro — Spacecraft Onboard Interface Services</text>
+  <text x="730" y="50" fill="#34d399" font-family="sans-serif" font-size="12">● 10/10 PASS</text>
+
+  <!-- Left: SMAS Panel -->
+  <rect x="25" y="90" width="410" height="230" fill="#131b2e" stroke="#1e2c4a" rx="8"/>
+  <text x="45" y="120" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="bold">⚙️ Subnetwork Memory Access (SMAS)</text>
+  <rect x="45" y="135" width="370" height="165" fill="#070b14" stroke="#1e2c4a" rx="4"/>
+  <text x="60" y="160" fill="#60a5fa" font-family="monospace" font-size="11">Standard: CCSDS 135.0-B-1 / ISO 10537</text>
+  <text x="60" y="180" fill="#f1f5f9" font-family="monospace" font-size="11">Target Device: 0x10 (StarTracker 1)</text>
+  <text x="60" y="200" fill="#34d399" font-family="monospace" font-size="11">Operation: READ.request (32-bit Atomic)</text>
+  <text x="60" y="220" fill="#818cf8" font-family="monospace" font-size="11">Offset: 0x0004 (QUAT_Q1: 0.1234)</text>
+  <text x="60" y="240" fill="#94a3b8" font-family="monospace" font-size="11">Header: 12 Octets | Frame: 14 Octets</text>
+  <text x="60" y="260" fill="#a78bfa" font-family="monospace" font-size="11">Hex: 01 00 10 00 01 01 00 00 00 04 00 00</text>
+
+  <!-- Right: Virtual Device Rack Panel -->
+  <rect x="465" y="90" width="410" height="230" fill="#131b2e" stroke="#1e2c4a" rx="8"/>
+  <text x="485" y="120" fill="#818cf8" font-family="sans-serif" font-size="14" font-weight="bold">🎛️ Virtual Device Rack &amp; DDPS Data Pool</text>
+  <rect x="485" y="135" width="370" height="165" fill="#070b14" stroke="#818cf8" stroke-dasharray="4" rx="4"/>
+  
+  <rect x="495" y="145" width="110" height="40" fill="#1e293b" stroke="#38bdf8" rx="4"/>
+  <text x="505" y="163" fill="#38bdf8" font-family="monospace" font-size="10">StarTracker</text>
+  <text x="505" y="177" fill="#64748b" font-family="monospace" font-size="9">Addr 0x10</text>
+
+  <rect x="615" y="145" width="110" height="40" fill="#1e293b" stroke="#34d399" rx="4"/>
+  <text x="625" y="163" fill="#34d399" font-family="monospace" font-size="10">ReactionWheel</text>
+  <text x="625" y="177" fill="#64748b" font-family="monospace" font-size="9">Addr 0x20</text>
+
+  <rect x="735" y="145" width="110" height="40" fill="#1e293b" stroke="#fbbf24" rx="4"/>
+  <text x="745" y="163" fill="#fbbf24" font-family="monospace" font-size="10">Power_EPS</text>
+  <text x="745" y="177" fill="#64748b" font-family="monospace" font-size="9">Addr 0x30</text>
+
+  <text x="495" y="215" fill="#38bdf8" font-family="monospace" font-size="10">StarTracker.QUAT_Q1 = 0.1234</text>
+  <text x="495" y="235" fill="#34d399" font-family="monospace" font-size="10">ReactionWheel.SPEED_RPM = 3200 RPM</text>
+  <text x="495" y="255" fill="#fbbf24" font-family="monospace" font-size="10">Power_EPS.BATTERY_SOC = 94.8%</text>
+
+  <text x="495" y="285" fill="#94a3b8" font-family="monospace" font-size="9">DDPS Cache Freshness: Active Background Sampling (10 Hz)</text>
+
+  <!-- Bottom: Audit Scorecard -->
+  <rect x="25" y="340" width="850" height="180" fill="#131b2e" stroke="#1e2c4a" rx="8"/>
+  <text x="45" y="370" fill="#34d399" font-family="sans-serif" font-size="15" font-weight="bold">🛡️ 10-Point Normative Auditor — 10/10 Normative Rules Compliant (100% PASS)</text>
+  
+  <rect x="45" y="390" width="250" height="55" fill="#070b14" stroke="#1e2c4a" rx="4"/>
+  <text x="60" y="415" fill="#38bdf8" font-family="monospace" font-size="12">SOIS-001: Service Code</text>
+  <text x="60" y="435" fill="#34d399" font-family="sans-serif" font-size="11">✓ PASS (SMAS Code 1 Verified)</text>
+
+  <rect x="325" y="390" width="250" height="55" fill="#070b14" stroke="#1e2c4a" rx="4"/>
+  <text x="340" y="415" fill="#38bdf8" font-family="monospace" font-size="12">SOIS-005: DVS Abstraction</text>
+  <text x="340" y="435" fill="#34d399" font-family="sans-serif" font-size="11">✓ PASS (Sensor/Actuator Virtualized)</text>
+
+  <rect x="605" y="390" width="250" height="55" fill="#070b14" stroke="#1e2c4a" rx="4"/>
+  <text x="620" y="415" fill="#38bdf8" font-family="monospace" font-size="12">SOIS-010: cFS Compatibility</text>
+  <text x="620" y="435" fill="#34d399" font-family="sans-serif" font-size="11">✓ PASS (SAVOIR Architecture Ready)</text>
+
+  <text x="45" y="485" fill="#94a3b8" font-family="monospace" font-size="12">Spacecraft Onboard Interface Services | Memory Access SMAS | Device Virtualization DVS | Data Pool DDPS</text>
+</svg>
